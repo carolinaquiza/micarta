@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Malabar - Carta</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <img src="img/logo.png" alt="Logo Restaurante" class="logo"/>
+    <h1 class="header-name">Escondite gastronómico</h1>
+    <p class="phone">662 921 932</p>
+    <p class="subtitle">Nuestra carta</p>
+  </header>
+
+  <nav class="menu-nav">
+    <button onclick="showSection('entrantes')">Entrantes</button>
+    <button onclick="showSection('principales')">Principales</button>
+    <button onclick="showSection('postres')">Postres</button>
+    <button onclick="showSection('bebidas')">Bebidas</button>
+  </nav>
+
+  <main>
+    <section id="entrantes" class="menu-section">
+  <h2>Entrantes</h2>
+  <ul>
+    <li>
+      <div class="dish-info">
+        <span class="dish-name">BACON CHEESE FRIES</span>
+        <p class="dish-desc">Patatas dipper bañadas en queso fundido y salsa ranchera con bacon crujiente</p>
+      </div>
+      <span class="price">8.5€</span>
+    </li>
+
+    <li>
+      <div class="dish-info">
+        <span class="dish-name">CARPACCIO DE ANGUS</span>
+        <p class="dish-desc">100% black angus con nuestro aliño especial</p>
+      </div>
+      <span class="price">10€</span>
+    </li>
+
+    <li>
+      <div class="dish-info">
+        <span class="dish-name">NACHOS LUPITA</span>
+        <p class="dish-desc">Nachos con guacamole, nata agria, chili con carne, pico de gallo y jalapeños bañados en salsa de queso</p>
+      </div>
+      <span class="price">9.5€</span>
+    </li>
+
+    <li>
+      <div class="dish-info">
+        <span class="dish-name">LÁGRIMAS DE POLLO</span>
+        <p class="dish-desc">Crujiente pollo rebozado con salsa BBQ ahumada</p>
+      </div>
+      <span class="price">8€</span>
+    </li>
+
+    <li>
+      <div class="dish-info">
+        <span class="dish-name">ENSALADILLA LUPITA</span>
+        <p class="dish-desc">Dip de atún con mayo y nuestra salsa secreta acompañada de nachos</p>
+      </div>
+      <span class="price">8€</span>
+    </li>
+
+    <li>
+      <div class="dish-info">
+        <span class="dish-name">LANGOSTINOS THAI</span>
+        <p class="dish-desc">Deliciosos langostinos recubiertos por una fina capa de panko</p>
+      </div>
+      <span class="price">9€</span>
+    </li>
+
+<li class="multi-option-dish">
+  <div class="dish-info">
+    <span class="dish-name">GYOZAS</span>
+    <p class="dish-desc">Elige tus 6 sabrosas empanadillas japonesas rellenas de:</p>
+    <div class="options-list">
+      <div class="option-item">
+        <span>Pollo con verduritas</span>
+        <span class="price">7.5€</span>
+      </div>
+      <div class="option-item">
+        <span>Verduritas</span>
+        <span class="price">7.5€</span>
+      </div>
+      <div class="option-item">
+        <span>Langostinos</span>
+        <span class="price">8€</span>
+      </div>
+    </div>
+  </div>
+</li>
+
+  </ul>
+</section>
+
+
+    <section id="principales" class="menu-section" style="display:none">
+      <h2>Platos Principales</h2>
+      <ul>
+        <li><span class="dish-name">Paella Valenciana</span><span class="price">15€</span></li>
+        <li><span class="dish-name">Entrecot a la Brasa</span><span class="price">18€</span></li>
+      </ul>
+    </section>
+
+    <section id="postres" class="menu-section" style="display:none">
+      <h2>Postres</h2>
+      <ul>
+        <li><span class="dish-name">Tarta de Queso</span><span class="price">5€</span></li>
+        <li><span class="dish-name">Helado Artesano</span><span class="price">4€</span></li>
+      </ul>
+    </section>
+
+    <section id="bebidas" class="menu-section" style="display:none">
+      <h2>Bebidas</h2>
+      <ul>
+        <li><span class="dish-name">Copa de Vino</span><span class="price">3€</span></li>
+        <li><span class="dish-name">Cerveza Artesana</span><span class="price">4€</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p class="footer-name">Malabar</p>
+    <p>Calle Carchena · 40200 Cuéllar (Segovia)</p>
+    <p>&copy; 2025 Malabar</p>
+  </footer>
+
+
+
+  <script>
+    function showSection(sectionId) {
+      const sections = document.querySelectorAll('.menu-section');
+      sections.forEach(sec => sec.style.display = 'none');
+      document.getElementById(sectionId).style.display = 'block';
+    }
+  </script>
+</body>
+</html>
