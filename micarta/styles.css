@@ -59,15 +59,12 @@ header {
   margin: 5px 0;
 }
 
-/* ===== MENÚ NAVEGABLE CENTRADO ===== */
+/* ===== MENÚ NAVEGABLE HORIZONTAL SCROLLABLE ===== */
 .menu-nav {
   background: #fffef9;
   border-bottom: 1px solid #d5c4a1;
   padding: 10px 10px;
   overflow-x: auto;
-  white-space: nowrap;
-  display: flex;
-  justify-content: center;
 }
 
 .menu-links {
@@ -75,7 +72,17 @@ header {
   gap: 15px;
   flex-wrap: wrap;
   justify-content: center;
+  min-width: 100%;
 }
+
+@media (max-width: 600px) {
+  .menu-links {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    min-width: max-content;
+  }
+}
+
 
 .menu-links a {
   display: inline-block;
@@ -98,7 +105,6 @@ header {
   color: #2d2d2d;
 }
 
-/* Aquí agregamos la clase .active para el enlace seleccionado */
 .menu-links a.active {
   background-color: #bfa16a;
   color: #fff;
