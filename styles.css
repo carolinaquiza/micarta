@@ -1,6 +1,8 @@
 /* Importa Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;600&family=Source+Sans+Pro:wght@400;600&display=swap');
-
+* {
+  outline: 1px solid rgba(255,0,0,0.2);
+}
 html, body {
   margin: 0;
   padding: 0;
