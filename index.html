@@ -2,142 +2,221 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Malabar - Carta</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tu carta digital</title>
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header>
-    <img src="img/logo.png" alt="Logo Restaurante" class="logo"/>
-    <h1 class="header-name">Escondite gastronómico</h1>
-    <p class="phone">662 921 932</p>
-    <p class="subtitle">Nuestra carta</p>
+
+  <header class="main-header">
+    <div class="header-content">
+      <span class="header-title">Soluciones digitales</span>
+      <a href="micarta/index.html" class="btn-example">Ejemplo</a>
+    </div>
+    <h1 class="main-text">El menú de tu restaurante en formato digital.</h1>
   </header>
 
-  <nav class="menu-nav">
-    <button onclick="showSection('entrantes')">Entrantes</button>
-    <button onclick="showSection('principales')">Principales</button>
-    <button onclick="showSection('postres')">Postres</button>
-    <button onclick="showSection('bebidas')">Bebidas</button>
-  </nav>
-
   <main>
-    <section id="entrantes" class="menu-section">
-  <h2>Entrantes</h2>
-  <ul>
-    <li>
-      <div class="dish-info">
-        <span class="dish-name">BACON CHEESE FRIES</span>
-        <p class="dish-desc">Patatas dipper bañadas en queso fundido y salsa ranchera con bacon crujiente</p>
-      </div>
-      <span class="price">8.5€</span>
-    </li>
 
-    <li>
-      <div class="dish-info">
-        <span class="dish-name">CARPACCIO DE ANGUS</span>
-        <p class="dish-desc">100% black angus con nuestro aliño especial</p>
+    <section id="beneficios">
+      <div class="beneficios-title">
+        <h1>Digitalizar tu menú incrementa el ticket medio entre un 10% y un 20%</h1>
+        <p>(según diversos estudios en España y Europa)</p>
       </div>
-      <span class="price">10€</span>
-    </li>
 
-    <li>
-      <div class="dish-info">
-        <span class="dish-name">NACHOS LUPITA</span>
-        <p class="dish-desc">Nachos con guacamole, nata agria, chili con carne, pico de gallo y jalapeños bañados en salsa de queso</p>
+      <div class="beneficios-content">
+        <div class="beneficios-text">
+          <p>
+            Implantar un menú digital en tu restaurante supone un <strong>aumento de las ventas</strong> gracias a la comodidad y rapidez que ofrece al cliente. Diversos estudios en España y Europa han demostrado que <b>digitalizar el menú incrementa el ticket medio entre un 10% y un 20%, reduce los tiempos de espera, mejora la rotación de mesas y facilita la venta de productos adicionales</b> mediante recomendaciones visuales y opciones destacadas.
+          </p>
+          <p>
+            Además, permite actualizar precios y platos al instante sin necesidad de reimprimir cartas en papel, evitando errores o desactualizaciones que generan mala imagen. Con el menú digital, cada mesa dispone siempre de la versión más actualizada, sin costes recurrentes de impresión ni demoras en el servicio.
+          </p>
+        </div>
+        <div class="beneficios-img">
+          <img src="img/cartadigitalpararestaurantes.jpg" alt="Carta digital para restaurantes" />
+        </div>
       </div>
-      <span class="price">9.5€</span>
-    </li>
-
-    <li>
-      <div class="dish-info">
-        <span class="dish-name">LÁGRIMAS DE POLLO</span>
-        <p class="dish-desc">Crujiente pollo rebozado con salsa BBQ ahumada</p>
-      </div>
-      <span class="price">8€</span>
-    </li>
-
-    <li>
-      <div class="dish-info">
-        <span class="dish-name">ENSALADILLA LUPITA</span>
-        <p class="dish-desc">Dip de atún con mayo y nuestra salsa secreta acompañada de nachos</p>
-      </div>
-      <span class="price">8€</span>
-    </li>
-
-    <li>
-      <div class="dish-info">
-        <span class="dish-name">LANGOSTINOS THAI</span>
-        <p class="dish-desc">Deliciosos langostinos recubiertos por una fina capa de panko</p>
-      </div>
-      <span class="price">9€</span>
-    </li>
-
-<li class="multi-option-dish">
-  <div class="dish-info">
-    <span class="dish-name">GYOZAS</span>
-    <p class="dish-desc">Elige tus 6 sabrosas empanadillas japonesas rellenas de:</p>
-    <div class="options-list">
-      <div class="option-item">
-        <span>Pollo con verduritas</span>
-        <span class="price">7.5€</span>
-      </div>
-      <div class="option-item">
-        <span>Verduritas</span>
-        <span class="price">7.5€</span>
-      </div>
-      <div class="option-item">
-        <span>Langostinos</span>
-        <span class="price">8€</span>
-      </div>
-    </div>
-  </div>
-</li>
-
-  </ul>
-</section>
-
-
-    <section id="principales" class="menu-section" style="display:none">
-      <h2>Platos Principales</h2>
-      <ul>
-        <li><span class="dish-name">Paella Valenciana</span><span class="price">15€</span></li>
-        <li><span class="dish-name">Entrecot a la Brasa</span><span class="price">18€</span></li>
-      </ul>
     </section>
 
-    <section id="postres" class="menu-section" style="display:none">
-      <h2>Postres</h2>
-      <ul>
-        <li><span class="dish-name">Tarta de Queso</span><span class="price">5€</span></li>
-        <li><span class="dish-name">Helado Artesano</span><span class="price">4€</span></li>
-      </ul>
+    <section id="características">
+      <div class="caracteristica-info">
+        <span class="caracteristica-name">Incrementa las visitas con tu carta disponible online</span>
+        <p class="caracteristica-desc">
+          Tus clientes pueden consultar tu carta antes de visitar tu restaurante, lo que aumenta la probabilidad de reserva. Si ofreces menús especiales (para celíacos, vegetarianos, niños…), podrán verlo con antelación y elegirte con seguridad, evitando confusiones o dudas.
+        </p>
+      </div>
+
+      <div class="caracteristica-info">
+        <span class="caracteristica-name">Atención más rápida y ticket medio más alto gracias al QR</span>
+        <p class="caracteristica-desc">
+          Tus clientes solo tienen que escanear un código QR en la mesa para ver la carta y decidir en segundos qué pedir. Esto <strong>agiliza el servicio, reduce esperas</strong> y permite una mayor rotación de mesas. Además, al tener siempre la carta a mano, <strong>muchos clientes piden más —especialmente bebidas—</strong> lo que incrementa el ticket medio de forma natural.
+        </p>
+      </div>
+
+      <div class="caracteristica-info">
+        <span class="caracteristica-name">Imagen moderna, profesional y cuidada</span>
+        <p class="caracteristica-desc">
+          Tu carta digital estará alojada en <strong>una página web profesional con el nombre de tu restaurante</strong> (por ejemplo: restaurantelaluna.com), con tu logo y un diseño adaptado a tu estilo. Refuerza tu imagen de marca y transmite profesionalidad desde el primer clic.
+        </p>
+      </div>
+
+      <div class="caracteristica-info">
+        <span class="caracteristica-name">Carta siempre actualizada, sin gastos en papel</span>
+        <p class="caracteristica-desc">
+          Olvídate de imprimir nuevas cartas cada vez que cambias un precio o un plato. Nos encargamos de mantener tu menú digital al día, para que siempre esté disponible, correcto y sin errores. Sin costes de reimpresión, sin preocupaciones: tú nos avisas, y lo actualizamos.
+        </p>
+      </div>
     </section>
 
-    <section id="bebidas" class="menu-section" style="display:none">
-      <h2>Bebidas</h2>
-      <ul>
-        <li><span class="dish-name">Copa de Vino</span><span class="price">3€</span></li>
-        <li><span class="dish-name">Cerveza Artesana</span><span class="price">4€</span></li>
-      </ul>
+    <section id="precio">
+      <div id="tabla-precios">
+        <div class="precio-title">
+          <h1>Todo lo que necesitas, sin líos.</h1>
+          <p>Nosotros nos encargamos de crear y mantener tu carta digital.</p>
+        </div>
+
+        <div class="precio-info">
+          <div class="precio-header">
+            <h2 class="precio-name">Primer año</h2>
+            <span class="precio-name">120€</span>
+          </div>
+          <p class="dish-desc">
+            Diseño personalizado, dominio propio, QR e integración móvil. Incluye mantenimiento completo durante el primer año con hasta 3 actualizaciones.
+          </p>
+        </div>
+
+        <hr />
+
+        <div class="precio-info">
+          <div class="precio-header">
+            <h2 class="precio-name">Mantenimiento anual (segundo año y siguientes)</h2>
+            <span class="precio-name">100€/año</span>
+          </div>
+          <p class="precio-desc">Mantenimiento completo con hasta 3 actualizaciones anuales.</p>
+        </div>
+
+        <hr />
+
+        <div class="precio-info">
+          <div class="precio-header">
+            <h2 class="precio-name">Extras opcionales</h2>
+            <span class="precio-name">Desde 15€</span>
+          </div>
+          <p class="precio-desc">Cambios adicionales, rediseño...</p>
+        </div>
+      </div>
     </section>
+
+    <section id="contacto-carta-digital">
+      <div class="contacto-container">
+        <h2>¿Quieres tener tu carta digital personalizada?</h2>
+        <p>Transforma la experiencia de tus clientes con un menú moderno y accesible desde cualquier dispositivo.</p>
+
+	<p>💬 Contáctanos por WhatsApp al <a href="tel:+34613038180" class="contacto-mail">613 038 180</a> y nosotros nos ocupamos de todo.</p>
+      </div>
+    </section>
+
+    <section class="acordeon-seccion">
+      <h2>Preguntas frecuentes</h2>
+
+      <div class="acordeon-item">
+        <button class="acordeon-titulo">¿Qué incluye el menú digital?<span class="acordeon-icon">+</span></button>
+        <div class="acordeon-contenido">
+          <p>Incluye tu carta digital con dominio propio, diseño personalizado, soporte técnico y hasta 3 actualizaciones anuales sin coste adicional.</p>
+        </div>
+      </div>
+
+      <div class="acordeon-item">
+        <button class="acordeon-titulo">¿Qué es lo del código QR?<span class="acordeon-icon">+</span></button>
+        <div class="acordeon-contenido">
+          <p>Te entregamos un diseño personalizado del código QR que lleva directamente a tu carta digital. También incluimos instrucciones para que puedas imprimirlo fácilmente en una imprenta local o por internet. Nosotros no nos encargamos de la impresión, pero sí te damos todo listo para que lo hagas sin complicaciones.</p>
+        </div>
+      </div>
+
+      <div class="acordeon-item">
+        <button class="acordeon-titulo">¿Qué son las actualizaciones anuales?<span class="acordeon-icon">+</span></button>
+        <div class="acordeon-contenido">
+          <p>Incluimos hasta 3 actualizaciones al año donde puedes cambiar cualquier parte del contenido de tu carta: platos, precios, imágenes, colores, dirección, etc. No importa si son muchos o pocos cambios, lo importante es que sean en momentos distintos. Si necesitas más de 3 actualizaciones, puedes solicitarlas por solo 15 € cada una.</p>
+        </div>
+      </div>
+
+      <div class="acordeon-item">
+        <button class="acordeon-titulo">¿Cómo se ve la carta en el móvil?<span class="acordeon-icon">+</span></button>
+        <div class="acordeon-contenido">
+          <p>La carta está diseñada para adaptarse a todos los dispositivos. Se ve perfectamente tanto en móvil como en tablet u ordenador, con un diseño claro, moderno y fácil de navegar.</p>
+        </div>
+      </div>
+
+      <div class="acordeon-item">
+        <button class="acordeon-titulo">¿Puedo usar mi propio dominio?<span class="acordeon-icon">+</span></button>
+        <div class="acordeon-contenido">
+          <p>Sí. Podemos usar tu dominio actual o registrar uno nuevo para ti. El dominio personalizado está incluido en el servicio sin coste adicional durante el primer año.</p>
+        </div>
+      </div>
+
+      <div class="acordeon-item">
+        <button class="acordeon-titulo">¿Qué pasa después del primer año?<span class="acordeon-icon">+</span></button>
+        <div class="acordeon-contenido">
+          <p>Después del primer año, puedes seguir disfrutando del servicio por 100 €/año o 10 €/mes, incluyendo dominio, soporte técnico y 3 actualizaciones anuales.</p>
+        </div>
+      </div>
+
+      <div class="acordeon-item">
+        <button class="acordeon-titulo">¿Cuánto tarda en estar lista la carta?<span class="acordeon-icon">+</span></button>
+        <div class="acordeon-contenido">
+          <p>En general, en unos 7-15 días puedes tener tu carta digital totalmente lista, dependiendo de si tienes ya los textos y precios preparados.</p>
+        </div>
+      </div>
+
+      <div class="acordeon-item">
+        <button class="acordeon-titulo">¿Puedo hacerla yo mismo más adelante?<span class="acordeon-icon">+</span></button>
+        <div class="acordeon-contenido">
+          <p>Por supuesto. Si más adelante decides gestionar tu carta por tu cuenta, puedes pedirnos que te entreguemos todos los archivos para alojarla donde quieras.</p>
+        </div>
+      </div>
+
+      <div class="acordeon-item">
+        <button class="acordeon-titulo">¿Cómo acceden los clientes a la carta?<span class="acordeon-icon">+</span></button>
+        <div class="acordeon-contenido">
+          <p>Escanean un código QR desde la mesa o la entrada. Acceden al instante desde cualquier móvil sin necesidad de app.</p>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer>
-    <p class="footer-name">Malabar</p>
-    <p>Calle Carchena 7 · 40200 Cuéllar (Segovia)</p>
-    <p>&copy; 2025 Malabar</p>
+    &copy; 2025 TuCartaDigital | 613 038 180
   </footer>
 
-
-
   <script>
-    function showSection(sectionId) {
-      const sections = document.querySelectorAll('.menu-section');
-      sections.forEach(sec => sec.style.display = 'none');
-      document.getElementById(sectionId).style.display = 'block';
-    }
+    const acordeonTitulos = document.querySelectorAll(".acordeon-titulo");
+
+    acordeonTitulos.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const item = btn.parentElement;
+        const contenido = item.querySelector(".acordeon-contenido");
+        const icon = btn.querySelector(".acordeon-icon");
+
+        const abierto = contenido.style.maxHeight;
+
+        // Cierra todos los ítems primero
+        document.querySelectorAll(".acordeon-contenido").forEach(c => {
+          c.style.maxHeight = null;
+        });
+        document.querySelectorAll(".acordeon-icon").forEach(i => {
+          i.textContent = "+";
+        });
+
+        // Si no estaba abierto, lo abre
+        if (!abierto || abierto === "0px") {
+          contenido.style.maxHeight = contenido.scrollHeight + "px";
+          icon.textContent = "−";
+        }
+      });
+    });
   </script>
+
 </body>
 </html>
